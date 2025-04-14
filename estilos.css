@@ -39,7 +39,7 @@ body {
 
 h1 {
 	/* SERÍA EL TITULO PRINCIPAL*/
-	font-size: 2em;
+	font-size: 1.7em;
 	margin-left: 40px;
 	/* separarlo del borde del contenedor*/
 }
@@ -127,18 +127,35 @@ main {
 	margin: 0 auto;
 }
 
+/* sección alineada*/
+
+section {
+	background-color: transparent;
+	width: 1080px;
+	margin-left: 70px;
+	margin-right: 30px;
+	margin-top: 50px;
+}
+
 h2 {
 	font-size: 2em;
 	color: #858585;
-	background-color: #ffffff;
-	margin-top: 60px;
+	margin-top: 5px;
 	/*margen de arriba*/
 	margin-bottom: 30px;
 	/*margen de abajo*/
 }
 
-.biografia {
+#biografia {
 	color: #333;
+}
+
+.pretitulo-chiquito {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	color: #999;
+	letter-spacing: 1px;
+	margin-bottom: 0.5em;
 }
 
 .texto-biografia {
@@ -149,16 +166,6 @@ h2 {
 .texto-biografia-abajo {
 	font-weight: 500;
 	font-style: italic;
-}
-
-/* sección alineada a la derecha*/
-
-section {
-	background-color: transparent;
-	width: 1080px;
-	margin-left: 70px;
-	margin-right: 30px;
-	margin-top: 50px;
 }
 
 
@@ -354,3 +361,26 @@ button:hover {
 .volverarriba a:hover {
 	color: brown;
 }
+
+/*<<<<<EFECTO DE TRANSICION AL CARGAR LA PÁGINA, aparece de a poco>>>>>>>*/
+/*no olvidarme de aplicar el "class=fade-in"*/
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: aparecer 1.5s ease-out forwards;
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+		/*hacia dónde va*/
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/*<<<<< termina EFECTO DE TRANSICION AL CARGAR LA PÁGINA>>>>>>>*/
