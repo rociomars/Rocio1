@@ -127,19 +127,40 @@ main {
 	margin: 0 auto;
 }
 
+h2 {
+	font-size: 2em;
+	color: #858585;
+	background-color: #ffffff;
+	margin-top: 60px;
+	/*margen de arriba*/
+	margin-bottom: 30px;
+	/*margen de abajo*/
+}
+
+.biografia {
+	color: #333;
+}
+
+.texto-biografia {
+
+	font-weight: 500;
+}
+
+.texto-biografia-abajo {
+	font-weight: 500;
+	font-style: italic;
+}
+
 /* sección alineada a la derecha*/
 
 section {
-	background-color: burlywood;
-	width: 880px;
-	margin-right: 20px;
+	background-color: transparent;
+	width: 1080px;
+	margin-left: 70px;
+	margin-right: 30px;
+	margin-top: 50px;
 }
 
-aside {
-	background-color: darkgray;
-	width: 300px;
-
-}
 
 footer {
 	background-color: white;
