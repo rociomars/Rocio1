@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" /> <!-- acá nombres,linkeos. Esto no se ve -->
-    <title>Primer tp portfolio</title>
+    <title>silva-rocio-cv</title>
 
     <!--vincula con la página de estilos css aparte-->
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -25,112 +25,126 @@
 
     <!--iconos de font awesome que usé abajo del mapa (redes)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--iconos de pág. faticon que usé en la minibio-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
 
 </head>
 
 
 <body>
     <!-- Cuerpo, todo lo que se ve en estructura -->
-
-
     <header id="arriba">
         <!-- "cabecera" la parte de arriba, donde está el linkeo a inicio, about me, etc. -->
-
         <h1>rStudio.design®</h1>
-
         <!--empieza el nav tipo menú-->
         <nav class="botones">
             <ul>
-                <li><a href="#arriba">Inicio</a></li> <!-- "a" linkea páginas, etc-->
-                <li><a href="#biografía">MiniBio</a></li>
+                <!-- "a" linkea páginas, etc-->
+                <li><a href="#biografia">MiniBio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contact">Contact</a></li>
-
-                <!-- click para descargar la imagen//
-                <a href="x.x" download> descargá esta imagen</a>//
-            -->
             </ul>
         </nav> <!--termina el nav-->
-
     </header> <!--termina el header-->
-
 
     <main class="fade-in"> <!-- EMPIEZA EL MAIN sería el medio... todo el contenido digamos-->
 
-        <!-- >>>>>> falta:
-        CONFIGURAR Y ORDENAR EL MAINNNN
-        EDITAR FOTOS A TAMAÑO Y EN RGB
-        USAR LISTAS LI PARA IMAGENES?
-        orgsnizar las sections...
-        <<<<<<<<<< -->
+        <section id="inicio">
+            <h2>Bienvenid@ a mi espacio creativo</h2>
+            <!--agregar el fondo-->
+        </section>
 
-        <section id="biografia">
+        <section id="biografia" class="contenedor-biografia">
             <!--si quiero que haga transición de desvanecer el texto tengo que poner esta clase para aplicarlo (configurada en la pag. de css)-->
-            <p class="pretitulo-chiquito">Proyectos destacados</p>
-
-            <h2>¡Bienvenid@! Estás en mi portfolio</h2>
-            <p class="texto-biografia">
-                Aquí podrás conocer más sobre el proceso detrás de cada uno de mis proyectos, mi recorrido académico
-                y cómo abordo cada desafío en mi trabajo. A través de estas experiencias, busco transmitir mi
-                estilo, dedicación y la forma en que me conecto con cada proyecto para lograr resultados
-                auténticos y funcionales.</p>
-            <p class="texto-biografia-abajo">
-                Espero lo disfrutes, tanto como yo cuando los hice.
-            </p>
+            <img src='https://blush.design/api/download?shareUri=_cjxg5Pgbfkf4H6V&c=Skin_0%7Effdbb4&w=800&h=800&fm=png'
+                width="220" height="190" alt="foto-rocio" />
+            <div class="titulominibio">
+                <h2>¡Hola, Soy Rocío!</h2>
+                <p class="texto-biografia">
+                    Soy diseñadora gráfica en proceso, de Buenos Aires. Me apasiona el diseño web,
+                    editorial y creación de Branding.</p>
+            </div>
         </section>
 
-
-        <section id="estudios">
-            <h2>Estudios</h2>
-            <h3>Lic. Diseño y comunicación visual</h3>
-            <p>Universidad nac. de Lanús 2020 - actualidad</p>
-            <h3>Introducción al diseño ux/ui</h3>
-            <p>Curso - 2025</p>
+        <section class="cards-container">
+            <div class="card">
+                <h3>Programas</h3>
+                <img src='img/iconos/fi-brands-indesign.svg' width="32" height="32" alt="indesign">
+                <img src="img/iconos/fi-brands-illustrator.svg" width="32" height="32" alt="illustrator">
+                <img src="img/iconos/fi-brands-photoshop.svg" width="32" height="32" alt="photoshop">
+                <img src="img/iconos/fi-brands-premiere.svg" width="32" height="32" alt="premiere">
+                <img src="img/iconos/fi-brands-figma.svg" width="32" height="32" alt="Figma">
+                <img src="img/iconos/fi-brands-visual-basic.svg" width="32" height="32" alt="visual">
+                <img src="img/iconos/fi-brands-html5.svg" width="32" height="32" alt="html5">
+            </div>
+            <div class="card">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Español (nativo)</li>
+                    <li>Inglés B1</li>
+                    <li>Français A1</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Especialidades</h3>
+                <ul>
+                    <li>Foto producto</li>
+                    <li>Diseño editorial</li>
+                    <li>Diseño UX/UI</li>
+                </ul>
+            </div>
+            <div class="card card-large">
+                <h3>Estudios</h3>
+                <ul>
+                    <li>Lic. Diseño y comunicación visual-UNLa</li>
+                    <li>Introducción UX/xUI 2025</li>
+                </ul>
+            </div>
+            <div class="card card-large">
+                <h3>Experiencia</h3>
+                <p>Diseñadora freelance desde 2022. He trabajado con marcas emergentes, desarrollando identidad
+                    visual, redes y piezas impresas.</p>
+            </div>
         </section>
 
-        <section class="proyectos" id="proyectos">
-
-            <h2>Proyectos</h2>
-            <h3>Recetarios</h3>
-            <p>Realizados en Espacio Tipográfico II</p>
-            <img src="img/recetario (1).png" width="220" height="220" alt="recetario1">
-            <img src="img/recetario (2).png" width="220" height="220" alt="recetario2">
-            <img src="img/recetario (3).png" width="220" height="220" alt="recetario3">
-            <h3>Prototipo de app "Health"</h3>
-            <img src="img/proto-app (1).png" width="220" height="220" alt="protoapp2">
-            <img src="img/proto-app (2).png" width="220" height="220" alt="protoapp2">
-            <img src="img/proto-app(3).png" width="220" height="220" alt="protoapp3">
-            <img src="img/proto-app(4).png" width="220" height="220" alt="protoapp4">
-        </section>
-
-
-        <section>
-            <h2>Work</h2>
-            <h3>Revista H&H 2022</h3>
-            <p>Diseño editorial</p>
-            <article>
-                <img src="img/revista-hyh.png" width="165" height="220" alt="imagen-hyh-re">
-                <img src="img/rediseño-revista.png" width="210" height="220" alt="imagen-hyh">
-            </article>
-            <h3>Café "Cream" 2023</h3>
-            <p>Rediseño de marca</p>
-            <article>
-                <img src="img/cream-marca-caf.png" width="220" height="200" alt="imagen-identidad-de-marca-cream" />
-                <img src="img/cream-marca-cafe.jpg" width="220" height="200" alt="imagen-identidad-de-marca-cream" />
-                <img src="img/cream-marca-cafebar.png" width="270" height="200" alt="imagen-identidad-de-marca-cream" />
-                <img src="img/cream-marca-cafepkgng.png" width="290" height="200"
+        <section id="proyectos" class="proyectos-galeria">
+            <h2>Mis Proyectos</h2>
+            <h3>Editorial</h3>
+            <div class="grid-galeria">
+                <img src="img/revista-ropa.png" width="220" height="220" alt="revista-ropa">
+                <img src="img/recetario (2).png" width="220" height="220" alt="recetario2">
+                <img src="img/recetario (3).png" width="220" height="220" alt="recetario3">
+                <img src="img/rediseño-revista.png" width="210" height="220" alt="rediseño-revista">
+            </div>
+            <h3>Ux</h3>
+            <div class="grid-galeria">
+                <img src="img/protoapp.gif" alt="gif-app" class="gif">
+                <img src="img/ux (1).png" width="290" height="225" alt="ux1">
+                <img src="img/ux (2).png" width="290" height="225" alt="ux2">
+                <img src="img/ux (3).png" width="290" height="225" alt="ux3">
+                <img src="img/ux (4).png" width="290" height="225" alt="ux4">
+                <img src="img/ux (5).png" width="290" height="225" alt="ux5">
+                <img src="img/ux (6).png" width="290" height="225" alt="ux6">
+                <img src="img/ux (7).png" width="290" height="225" alt="ux7">
+            </div>
+            <h3>Branding</h3>
+            <div class="grid-galeria">
+                <img src="img/ambientacion-cobre-cafe.png" width="220" height="200"
                     alt="imagen-identidad-de-marca-cream" />
-                <img src="img/cream-marca-cafepkgng2.png" width="290" height="200"
-                    alt="imagen-identidad-de-marca-cream" />
-            </article>
+                <img src="img/menu-cobre-cafe.png" width="270" height="200" alt="imagen-identidad-de-marca-cream" />
+                <img src="img/diseño-pagina-web-marca-ropa.png" width="220" height="200"
+                    alt="imagen-identidad-de-marca-ropa" />
+                <img src="img/packaging-marca-ropa.png" width="220" height="200"
+                    alt="imagen-identidad-de-marca-ropa2" />
+                <img src="img/feed-tienda.png" width="220" height="200" alt="feed-tienda" />
+                <img src="img/tarjetas-marca.ropa.png" width="220" height="200" alt="tarjetas-marca.ropa" />
+                <img src="img/etiquetas-marca-ropa.png" width="220" height="200" alt="etiquetas-marca-ropa" />
+                <img src="img/logo-marca-ropa.png" width="220" height="200" alt="logo-marca-ropa" />
+            </div>
         </section>
-        <h3>indumentaria "Sustentable"</h3>
-        <p>Rediseño 2023</p>
-        <img src="img/diseño-pagina-web-marca-ropa.png" width="220" height="200" alt="imagen-identidad-de-marca-ropa" />
-        <img src="img/packaging-marca-ropa.png" width="220" height="200" alt="imagen-identidad-de-marca-ropa2" />
 
+        <!--sección contacto-->
         <div class="contacto-container" id="contact">
-
             <!-- Mapa DE UBICACIÓN GOOGLE Y Redes Sociales -->
             <section class="contacto-section">
                 <div class="mapa">
@@ -150,11 +164,9 @@
                     </div>
                 </div>
             </section>
-
             <!-- Formulario de contacto POR MAIL -->
             <section class="formulario-section">
-
-                <h2>Trabajemos juntos en tu próximo proyecto!</h2>
+                <h2> Trabajemos juntos en tu próximo proyecto!</h2>
                 <form action="mailto:tuemail@gmail.com" method="POST" enctype="text/plain">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -165,26 +177,21 @@
                     <button type="submit">Enviar mensaje</button>
                 </form>
             </section>
-
         </div>
 
     </main> <!--termina el main-->
-
-
-    <!-- Footer --> <!--parte de abajo que siempre queda igual, más chica-->
+    <!-- Footer, parte de abajo que siempre queda igual, más chica-->
     <footer class="footer">
-
+        <img src="https://blush.design/api/download?shareUri=sxI33hlJGYf8teTX&c=Skin_0%7Effdbb4&w=800&h=800&fm=png"
+            width="80" height="110" alt="avatar-rocio">
         <div class="footer-links">
             <a href="#">Política de privacidad</a>
             <a href="#">Términos y condiciones</a>
             <p>Copyright &copy; 2025. All rights reserved</p>
         </div>
-
         <div class="volverarriba">
             <p><a href="#arriba">Designed by rStudio.design</a></p>
-
         </div> <!--vuelve hacia arriba-->
-
     </footer>
 
 </body> <!-- termina el body, todo lo que se ve en estructura-->
