@@ -603,7 +603,7 @@ button:hover {
 .formulario-section {
 	flex: 1 1 400px;
 	/* Ocupan el mismo ancho en desktop, se adapta al celu */
-	max-width: 600px;
+	max-width: 580px;
 	/* Límite de ancho */
 }
 
@@ -862,17 +862,19 @@ footer img {
 	.contacto-container {
 		flex-direction: column;
 		align-items: center;
-		padding: 20px;
+		margin-right: 10%;
 	}
 
 	.contacto-section,
 	.formulario-section {
+		align-items: center;
 		width: 100%;
 		max-width: 100%;
 	}
 
 	.formulario-section h2 {
 		font-size: 22px;
+		align-items: center;
 	}
 
 	.botones-redes {
