@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8"> <!-- acá nombres,linkeos. Esto no se ve -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio-diseño">
+    <meta name="author" content="Rocío Silva">
+    <meta name="keywords" content="diseño gráfico, diseño web, portfolio, diseñador, proyectos creativos">
 
-    <title>silva-rocio-cv</title>
+    <title>Inicio | rStudio.design | Rocío Silva</title>
 
     <!--vincula con la página de estilos css aparte-->
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -18,204 +21,93 @@
     <!--link a la tipo de google fonts "Poppins"-->
 
     <!-- link iconito de la página minimizada FAVICON-->
-    <link rel="icon" type="image/png" sizes="192x192" href="img/iconos/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="img/iconos/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/iconos/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/iconos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/iconos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/iconos/favicon-16x16.png">
     <!--para iconito de pestaña en página web-->
-
-    <!--iconos de font awesome que usé abajo del mapa (redes)-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!--iconos de pág. faticon que usé en la minibio-->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-
 </head>
 
 
 <body>
     <!-- Cuerpo, todo lo que se ve en estructura -->
-    <header id="arriba">
-        <!-- "cabecera" la parte de arriba, donde está el linkeo a inicio, about me, etc. -->
-        <h1>rStudio.design®</h1>
+    <!-- VIDEO DE FONDO -->
+    <div class="video-fondo">
+        <video autoplay muted loop playsinline aria-hidden="true">
+            <source src="img/videos/portada-index.mp4" title="video-fondo-portfolio" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+    </div>
+
+    <header id="arriba-header">
+
+        <h1 class="nombre-del-estudio"><a href="index.html">rStudio®</a></h1>
         <!--empieza el nav tipo menú-->
         <nav class="botones">
             <ul>
                 <!-- "a" linkea páginas, etc-->
-                <li><a href="#biografia">MiniBio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="sobre-mi.html">Sobre mi</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html"> <img src="img/iconos/idioma-cambiar.svg" alt="cambiar-idioma" height="28"
+                            width="30"></a></li>
             </ul>
         </nav> <!--termina el nav-->
-    </header> <!--termina el header-->
+    </header>
+
+    <div class="video-espaciador"></div>
 
     <main class="fade-in"> <!-- EMPIEZA EL MAIN sería el medio... todo el contenido digamos-->
 
-        <section id="inicio">
-            <h2>Bienvenid@ a mi espacio creativo</h2>
-            <!--agregar el fondo-->
+        <section id="apartado-presentacion">
+            <h2 class="presentacion">
+                ¡Hola! soy Rocío Silva estudiante de Diseño y Comunicación Visual. De
+                Buenos Aires, partidaria de los mates al aire libre y las picadas con amigos.
+            </h2>
         </section>
 
-        <section id="biografia" class="contenedor-biografia">
-            <!--si quiero que haga transición de desvanecer el texto tengo que poner esta clase para aplicarlo (configurada en la pag. de css)-->
-            <img src='https://blush.design/api/download?shareUri=_cjxg5Pgbfkf4H6V&c=Skin_0%7Effdbb4&w=800&h=800&fm=png'
-                width="220" height="190" alt="foto-rocio" />
-            <div class="titulominibio">
-                <h2>¡Hola, Soy Rocío!</h2>
-                <p class="texto-biografia">
-                    Soy diseñadora gráfica en proceso, de Buenos Aires. Me apasiona el diseño web,
-                    editorial y creación de Branding.</p>
-            </div>
-        </section>
+        <!-- ANIMACION DE ETIQUETAS-->
+        <section id="contenedor-tags">
 
-        <section class="cards-container">
-            <div class="card">
-                <h3>Programas</h3>
-                <img src='img/iconos/fi-brands-indesign.svg' width="32" height="32" alt="indesign">
-                <img src="img/iconos/fi-brands-illustrator.svg" width="32" height="32" alt="illustrator">
-                <img src="img/iconos/fi-brands-photoshop.svg" width="32" height="32" alt="photoshop">
-                <img src="img/iconos/fi-brands-premiere.svg" width="32" height="32" alt="premiere">
-                <img src="img/iconos/fi-brands-figma.svg" width="32" height="32" alt="Figma">
-                <img src="img/iconos/fi-brands-visual-basic.svg" width="32" height="32" alt="visual">
-                <img src="img/iconos/fi-brands-html5.svg" width="32" height="32" alt="html5">
-            </div>
-            <div class="card">
-                <h3>Idiomas</h3>
-                <ul>
-                    <li>Español (nativo)</li>
-                    <li>Inglés B1</li>
-                    <li>Français A1</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Especialidades</h3>
-                <ul>
-                    <li>Foto producto</li>
-                    <li>Diseño editorial</li>
-                    <li>Diseño UX/UI</li>
-                </ul>
-            </div>
-            <div class="card card-large">
-                <h3>Estudios</h3>
-                <ul>
-                    <li>Lic. Diseño y comunicación visual-UNLa</li>
-                    <li>Introducción UX/xUI 2025</li>
-                </ul>
-            </div>
-            <div class="card card-large">
-                <h3>Experiencia</h3>
-                <p>Diseñadora freelance desde 2022. He trabajado con marcas emergentes, desarrollando identidad
-                    visual, redes y piezas impresas.</p>
-            </div>
-        </section>
-
-        <section id="proyectos" class="proyectos-galeria">
-            <h2>Mis Proyectos</h2>
-            <h3>Editorial</h3>
-            <div class="grid-galeria">
-                <img src="img/proyectos/editorial/revista-ropa.png" width="220" height="220" alt="revista-ropa">
-                <img src="img/proyectos/editorial/recetario (2).png" width="220" height="220" alt="recetario2">
-                <img src="img/proyectos/editorial/recetario (3).png" width="220" height="220" alt="recetario3">
-                <img src="img/proyectos/editorial/rediseño-revista.png" width="210" height="220" alt="rediseño-revista">
-            </div>
-            <h3>Ux</h3>
-            <div class="grid-galeria">
-                <img src="img/proyectos/ux-ui/proto-apps.gif" alt="gif-proto-apps" class="gif">
-                <img src="img/proyectos/ux-ui/ui (1).png" width="290" height="225" alt="ux1">
-                <img src="img/proyectos/ux-ui/ui (2).png" width="290" height="225" alt="ux2">
-                <img src="img/proyectos/ux-ui/ui (3).png" width="290" height="225" alt="ux3">
-                <img src="img/proyectos/ux-ui/ui (4).png" width="290" height="225" alt="ux4">
-                <img src="img/proyectos/ux-ui/ui (5).png" width="290" height="225" alt="ux5">
-                <img src="img/proyectos/ux-ui/ui (6).png" width="290" height="225" alt="ux6">
-                <img src="img/proyectos/ux-ui/ui (7).png" width="290" height="225" alt="ux7">
-            </div>
-            <h3>Branding</h3>
-            <div class="grid-galeria">
-                <img src="img/proyectos/branding/ambientacion-cobre-cafe.jpg" width="220" height="200"
-                    alt="ambientacion-cobre-cafe" />
-                <img src="img/proyectos/branding/menu-cobre-cafe.jpg" width="270" height="200" alt="menu-cobre-cafe" />
-                <img src="img/proyectos/branding/historias-marca-ropa.jpg" width="220" height="200"
-                    alt="historias-marca-ropa" />
-                <img src="img/proyectos/branding/packaging-marca-ropa.png" width="220" height="200"
-                    alt="packaging-marca-ropa" />
-                <img src="img/proyectos/branding/feed-tienda.png" width="220" height="200" alt="feed-tienda" />
-                <img src="img/proyectos/branding/tarjetas-marca.ropa.png" width="220" height="200"
-                    alt="tarjetas-marca-ropa" />
-                <img src="img/proyectos/branding/etiquetas-marca-ropa.png" width="220" height="200"
-                    alt="etiquetas-marca-ropa" />
-                <img src="img/proyectos/branding/logo-marca-ropa.png" width="220" height="200" alt="logo-marca-ropa" />
-            </div>
-        </section>
-
-        <!--sección contacto-->
-        <div class="contacto-container" id="contact">
-            <!-- Mapa DE UBICACIÓN GOOGLE Y Redes Sociales -->
-            <section class="contacto-section">
-                <div class="mapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.796610848195!2d-58.39365562525575!3d-34.735520764469186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd5ebe0f6829%3A0x77634d225a40f10a!2sUniversidad%20Nacional%20de%20Lan%C3%BAs!5e0!3m2!1ses!2sar!4v1744088060032!5m2!1ses!2sar"
-                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="slider-tags">
+                <div class="slider-linea-1">
+                    <h4 class="tag">Identidad visual</h4>
+                    <h4 class="tag">Diseño y desarrollo web</h4>
+                    <h4 class="tag">Cartelería</h4>
+                    <h4 class="tag">Diseño UI</h4>
+                    <h4 class="tag">Diseño UX</h4>
+                    <h4 class="tag">Identidad visual</h4>
+                    <h4 class="tag">Diseño y desarrollo web</h4>
+                    <h4 class="tag">Cartelería</h4>
+                    <h4 class="tag">Diseño UI</h4>
+                    <h4 class="tag">Diseño UX</h4>
                 </div>
-                <div class="redes">
-                    <h4>Visitá rStudio</h4>
-                    <p>Coordinemos y hagamos realidad tu plan creativo</p>
-                    <!--div class="iconos">
-                        <a href="https://www.behance.net/rociomar" target="_blank"><i class="fab fa-behance"></i></a>
-                        <a href="https://wa.me/541112345678" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div-->
+                <div class="slider-linea-2">
+                    <h4 class="tag">Señalética</h4>
+                    <h4 class="tag">Diseño de envases</h4>
+                    <h4 class="tag">Papelería</h4>
+                    <h4 class="tag">DCU</h4>
+                    <h4 class="tag">Diseño de envases</h4>
+                    <h4 class="tag">Señalética</h4>
+                    <h4 class="tag">Diseño y desarrollo web</h4>
+                    <h4 class="tag">Papelería</h4>
+                    <h4 class="tag">DCU</h4>
+                    <h4 class="tag">Editorial</h4>
                 </div>
             </section>
-
-            <!-- Formulario de contacto POR MAIL >>>>>>>>>>>>>>-->
-            <section class="formulario-section">
-                <h2> Trabajemos juntos en tu próximo proyecto!</h2>
-                <form
-                    action="mailto:rociosilvacorreo2@gmail.com.ar?subject=Email enviado desde formulario rStudio.design"
-                    method="POST" target="_blank" enctype="text/plain">
-                    <!-- enctype: tipo de contenido-->
-
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Sam Torres" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="sam.torres@ejemplo.com" maxlength="30"
-                        required>
-
-
-                    <script> //script para que el textarea se mueva con el texto ingresado
-                        const textarea = document.getElementById('mensaje');
-
-                        textarea.addEventListener('input', () => {
-                            textarea.style.height = 'auto'; // Reinicia el alto
-                            textarea.style.height = textarea.scrollHeight + 'px'; // Ajusta al contenido
-                        });
-                    </script>
-
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" maxlength="600" placeholder="Ideas a concretar" rows="5"
-                        required></textarea>
-
-
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </section>
-        </div>
+        </section>
 
     </main> <!--termina el main-->
+
     <!-- Footer, parte de abajo que siempre queda igual, más chica-->
     <footer class="footer">
-        <img src="https://blush.design/api/download?shareUri=sxI33hlJGYf8teTX&c=Skin_0%7Effdbb4&w=800&h=800&fm=png"
-            width="80" height="110" alt="avatar-rocio">
-        <div class="footer-links">
-            <a href="#">Política de privacidad</a>
-            <a href="#">Términos y condiciones</a>
-            <p>Copyright &copy; 2025. All rights reserved</p>
-        </div>
         <div class="volverarriba">
-            <p><a href="#arriba">Designed by rStudio.design</a></p>
+            <p><a href="#arriba-header" target="_self">Volver arriba</a></p>
         </div> <!--vuelve hacia arriba-->
+        <div class="footer-links">
+            <a href="#">Política de privacidad |</a>
+            <a href="#">Términos y condiciones</a>
+            <p>rStudio.design &copy; 2025. All rights reserved</p>
+        </div>
+
     </footer>
 
 </body> <!-- termina el body, todo lo que se ve en estructura-->
